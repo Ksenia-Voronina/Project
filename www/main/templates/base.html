@@ -1,0 +1,46 @@
+{% load static %}
+
+
+<!Doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static '/style.css' %}">
+    <link rel="stylesheet" href="{% static '/jquery.bxslider.css' %}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+<!--    <link rel="stylesheet" href="style.css">-->
+
+</head>
+<body style="background-color:#eee">
+    <header>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container justify-content-between">
+            <div class="d-flex">
+
+                {% if request.path != '/' %}<a href="/">{% endif %}
+                <img src="{% static '/img/logo.svg' %}" height="40" alt="Логотип">
+                {% if request.path != '/' %}</a>{% endif %}
+
+                <h2 class="text-white px-3">Великий Новгород</h2>
+            </div>
+            <div class="info">
+                <a href="/data" style="font-size:2rem; color:white"><span class="lnr lnr-user"></span></a>
+            </div>
+        </div>
+
+      </div>
+
+<!--      <a href="/sofia"><img class="img-fluid" src="{% static '/img/sofia/sophia.jpg' %}" alt="Фото"></a>-->
+    </header>
+
+    <div class="container p-4 pt-3 " style="background-color:white; border-radius:0 0 1rem 1rem">
+    {% block content %}{% endblock %}
+    </div>
+
+</body>
+</html>

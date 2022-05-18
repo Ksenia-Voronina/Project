@@ -1,0 +1,176 @@
+.container {max-width: 1080px}
+img {border-radius:0.5rem}
+h3 a {text-decoration:none}
+h3 a:hover {text-decoration:underline; color:#ADD8E6}
+h5 {margin: 1rem}
+
+.somefuture {
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0;
+    display: block;
+}
+
+.price {
+    background-color: #171f23;
+    text-align: center;
+    color: #f6f6f6;
+    padding: 60px 0;
+    display: block;
+}
+
+.head_black_content {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.head_black_content span {
+    display: inline-block;
+    width: 180px;
+    height: 12px;
+    margin: 25px auto 0;
+    background: #404040;
+}
+
+.numeral>div>span{
+   font-size: 60px;
+   color: #ff7062;
+}
+.numeral>div>p {
+   font-size: 14px;
+   line-height: 100%;
+   color: #f0f0f0;
+}
+
+.numeral>div>h5 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    font-size: 28px;
+    letter-spacing: 0.25%;
+    color: #f0f0f0;
+    padding: 25px 0 13 px;
+}
+
+.additional_info {
+    padding: 20px;
+
+}
+.price-content-head{
+   background: #0e1316;
+    color: #ffffff;
+    padding: 40px 0 30px;
+    font-family: "Segou UI" , sans-serif;
+}
+.price-content-head h4 {
+    padding-top: 6px;
+    font-size: 24px;
+
+}
+.price-content-head p {
+    padding-top: 0 25px;
+    font-size: 14px;
+    margin-top: 25px;
+
+}
+.price-content-head h5 {
+    padding-top: 6px;
+    font-size: 18px;
+
+}
+.price-content-body{
+    background: #1f282c;
+    padding: 45px 0 40 px;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+.price-content-body p{
+   font-size: 14px;
+   padding-bottom: 20px;
+   color: #ffffff;
+}
+
+.price-content-body p span{
+   font-size: 15px;
+   font-weight: 700;
+   color: #ffffff;
+   margin-right: 2px;
+   letter-spacing: 2px;
+}
+.price-content-body a {
+    background: #666;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 700;
+    padding: 10px 30px;
+
+}
+.price-content-head:hover  {
+   border: 1px solid #00BFFF;
+}
+
+.price-content:hover .price-content-body>p>span {
+   color: #00BFFF;
+}
+
+
+.sinner1 {
+    padding: 9% 5%;
+    text-align: center;
+    background: #ebebeb;
+    min-height: 440;
+
+}
+.sinner1 img {
+    margin: auto;
+
+}
+.sinner1 a img {
+    display: inherit;
+    width: 20%
+
+}
+.sinner1 h4 {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.sinner2 {
+    padding: 9% 5%;
+    text-align: left;
+    background: #ebebeb;
+    min-height: 440;
+
+}
+.sinner2 img {
+    margin: auto;
+
+}
+.sinner2 a img {
+    display: inherit;
+    width: 20%
+
+}
+.sinner2 h4 {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+
+.team {
+    padding-bottom: 90px;
+
+}
+.team .bx-wrapper .bx-pager, .bx-wrapper bx-controls-auto {
+    position: absolute;
+    border: 50px;
+    width: 100%;
+    left: -34%;
+
+}
+
+.teamslider {
+  display: inline-block;
+}

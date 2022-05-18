@@ -1,0 +1,269 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Главная страница
+{% endblock %}
+
+{% block content %}
+
+<h5 >Если вы попали на этот сайт, значит вы находитесь в Великом Новгороде или будете там в ближайшее время, при этом вы
+не знаете куда там можно сходить.</h5>
+<h5>Далее вы найдете подробную информацию об экскурсиях, которые вы можете посетить. Так же если вы не можете до конца определиться
+с видом маршрута, то прочитайте информацию о достопримечательностях, которые можно посетить. Скорее всего, это вам поможет.</h5>
+
+<section class="banner">
+
+    <style>
+        .swiper {overflow:hidden; margin-bottom:2rem}
+        @media (min-width: 0px ) { height:230px }
+        @media (min-width: 480px ) { height:550px }
+    </style>
+<div class="swiper">
+  <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_3.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_4.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_6.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_10.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_12.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_13.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_14.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_15.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_16.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_17.webp' %}"  class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_18.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_19.webp' %}" class="img-fluid"></div>
+              <div class="swiper-slide"><img src="{% static '/img/swiper/scale_1200_20.webp' %}" class="img-fluid"></div>
+            </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
+
+    <link  rel="stylesheet"  href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+
+});
+</script>
+
+
+<!--                <div class="scrolldown" onclick="location.href='#';" style="cursor: pointer;">-->
+<!--                        <img src="img/mouse.png" alt="мышь">-->
+<!--                        <p>Листай вниз</p>-->
+<!--                </div>-->
+</section>
+
+<section class="somefuture">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12 col-xl-12">
+                  <div class="head_black_content">
+                    <h4>Наши достижения</h4>
+                    <span ></span>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="row numeral">
+            <div class="col-md-3 col-lg-3 col-xl-3">
+<!-- <span class="lnr lnr-screen"></span>-->
+                <span class="lnr lnr-earth"></span>
+                <p>Количество маршрутов</p>
+                <h5>10</h5>
+            </div>
+            <div class="col-md-3 col-lg-3 col-xl-3">
+                <span class="lnr lnr-users"></span>
+                <p>Довольных клиентов</p>
+                <h5>25</h5>
+             </div>
+            <div class="col-md-3 col-lg-3 col-xl-3">
+<!-- <span class="lnr lnr-hourglass"></span>-->
+                <span class="lnr lnr-diamond"></span>
+                <p>Приятные цены</p>
+                <h5>Очень низкие</h5>
+             </div>
+            <div class="col-md-3 col-lg-3 col-xl-3">
+<!-- <span class="lnr lnr-magic-wand"></span>-->
+                <span class="lnr lnr-gift"></span>
+                <p>Бонусы</p>
+                <h5>Кофе в подарок</h5>
+             </div>
+        </div>
+
+
+</section>
+
+<section class="price">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-lg-12 col-xl-12">
+              <div class="head_black_content">
+                <h4>Наши цены на экскурсии</h4>
+                  <p class="additional_info">Цены указаны для ознакомления. Не являются публичной офертой.</p>
+                <span ></span>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="row price-content">
+        <div class="col-md-3 col-lg-3 col-xl-3">
+            <div class="price-content-head">
+                <h5>5000 руб.</h5>
+                <h4>Маршрут 1</h4>
+                <p>Экскурсия по Кремлю</p>
+            </div>
+            <div class="price-content-body">
+                <p><span>3000</span> Шагов</p>
+                <p><span>2</span> Часа</p>
+                <p><span>5</span> Объектов</p>
+                <a href="#" class="order">Заказать</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3">
+           <div class="price-content-head">
+                <h5>10 000 руб.</h5>
+                <h4>Маршрут 2</h4>
+                <p>Экскурсия по Ярославому дворищу</p>
+            </div>
+            <div class="price-content-body">
+                <p><span>5000</span> Шагов</p>
+                <p><span>3</span> Часа</p>
+                <p><span>7</span> Объектов</p>
+                <a href="#" class="order">Заказать</a>
+            </div>
+        </div>
+        <div class="col-md-3 col-lg-3 col-xl-3">
+            <div class="price-content-head">
+                <h5>10 000 руб.</h5>
+                <h4>Маршрут 3</h4>
+                <p>Экскурсия в Юрьево</p>
+            </div>
+            <div class="price-content-body">
+                <p><span>7000</span> Шагов</p>
+                <p><span>4</span> Часа</p>
+                <p><span>2</span> Объекта</p>
+                <a href="#" class="order">Заказать</a>
+            </div>
+         </div>
+        <div class="col-md-3 col-lg-3 col-xl-3">
+            <div class="price-content-head">
+                <h5>от 1000 руб.</h5>
+                <h4>Маршрут 4</h4>
+                <p>Экскурсия по реке Волхов</p>
+            </div>
+            <div class="price-content-body">
+                <p><span>2000</span> Шагов</p>
+                <p><span>2</span> Часа</p>
+                <p><span>3</span> Объекта</p>
+                <a href="#" class="order">Заказать</a>
+            </div>
+         </div>
+
+    </div>
+
+
+</section>
+<h5 style="margin:1rem"> Если вы хотите подробнее узнать про достопримечательности нашего города, то можете прочитать о них далее. </h5>
+
+<div class="row">
+    <div class="col-12 col-md-4">
+        <a href="/sofia"><img class="img-fluid" src="{% static '/img/sofia/sophia.jpg' %}" alt="Фото"></a>
+    </div>
+    <div class="col-12 col-md-8">
+        <h3><a href="/sofia">Софийский собор</a></h3>
+        <p>Собор Святой Софии – выдающийся и бесценный памятник русского средневекового зодчества.
+            Он был выстроен по указанию Владимира Ярославовича, являвшегося старшим сыном Ярослава Мудрого, между 1045 – 1050 г.
+            Спустя 130 лет этот собор Великого Новгорода стал главным городским храмом и символом Новгородской республики.</p>
+        <p class="text-end"><a class="btn btn-primary btn-sm" href="/sofia">Подробнее</a></p>
+
+    </div>
+</div>
+
+
+
+<div class="row mt-3">
+    <div class="col-12 col-md-4">
+        <a href="/monument"><img class="img-fluid" src="{% static '/img/monument/monument.jpg' %}" alt="Фото"></a>
+    </div>
+    <div class="col-12 col-md-8">
+        <h3><a href="/monument">Памятник «Тысячелетие России»</a></h3>
+        <p>Памятник «Тысячелетие России» открыли в 1862 году в память о 1000-летии провозглашения русским князем варяга Рюрика.
+            Монумент увековечивает важную для страны дату, которую принято считать началом образования Русского государства.
+            Кроме того, он посвящен важнейшим принципам российской государственности – самодержавию, православию и народности.</p>
+        <p class="text-end"><a class="btn btn-primary btn-sm" href="/monument">Подробнее</a></p>
+
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12 col-md-4">
+        <a href="/yaroslavovo_dvorishche"><img class="img-fluid" src="{% static '/img/dvor/yaroslavovo-dvorishche.jpg' %}" alt="Фото"></a>
+    </div>
+    <div class="col-12 col-md-8">
+        <h3><a href="/yaroslavovo_dvorishche">Ярославово дворище</a></h3>
+        <p>Появилось в Великом Новгороде примерно в X-XI веках.
+            Представляет собой архитектурный комплекс.
+            В его состав входят многочисленные постройки: церкви, гостиный двор, фрагмент торговых рядов, аркада и пр.
+            Они отреставрированы и сохранены практически в неизменном виде.
+            Название получено в честь Ярослава Мудрого.
+            В 1992 году достопримечательность включена в число объектов всемирного наследия.</p>
+        <p class="text-end"><a class="btn btn-primary btn-sm" href="/yaroslavovo_dvorishche">Подробнее</a></p>
+
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12 col-md-4">
+        <a href="/yurievo"><img class="img-fluid" src="{% static '/img/yurievo/yurievo.jpg' %}" alt="Фото"></a>
+    </div>
+    <div class="col-12 col-md-8">
+        <h3><a href="/yurievo">Свято-Юрьев мужской монастырь</a></h3>
+        <p>Свято Юрьев Монастырь в Великом Новгороде — уникальное место, совмещающее в себе действующую обитель,
+            памятник древнерусской архитектуры, видовую площадку и изумительную выпечку.
+            Построен монастырь в 1119 году.</p>
+        <p class="text-end"><a class="btn btn-primary btn-sm" href="/yurievo">Подробнее</a></p>
+
+    </div>
+</div>
+
+<div class="row mt-3">
+    <div class="col-12 col-md-4">
+        <a href="/ryurikovo_gorodishche"><img class="img-fluid" src="{% static '/img/gor/ryurikovo-gorodishche.jpg' %}" alt="Фото"></a>
+    </div>
+    <div class="col-12 col-md-8">
+        <h3><a href="/ryurikovo_gorodishche">Рюриково городище</a></h3>
+        <p>Рюриково городище – археологический памятник у истока реки Волхов на правом берегу.
+            Городище известно как место нахождения резиденции новгородский князей,
+            с ним связаны имена многих политических деятелей древней Руси.
+            Считается, что  Новгород назван Новым Городом относительно Старого Города, находившегося на Городище.</p>
+        <p class="text-end"><a class="btn btn-primary btn-sm" href="/ryurikovo_gorodishche">Подробнее</a></p>
+
+    </div>
+</div>
+
+<script src="script/jquery.bxslider.min.js"></script>
+<script src="script/script.js"></script>
+<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+
+{% endblock %}
+
+

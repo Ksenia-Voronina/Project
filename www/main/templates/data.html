@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+Информация
+{% endblock %}
+
+{% block content %}
+<head>
+    <meta charset="UTF-8">
+    <title>Информация</title>
+</head>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Визитка</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <h1 align="center">Контактные лица</h1>
+
+    <div class="text-center mb-3">
+        <img src="{% static '/img/belka.webp' %}" height="400" align="center">
+    </div>
+
+
+    <table class="table main__table" id="p1">
+    <tr align="center" bgcolor = LightGrey>
+        <th>ФАМИЛИЯ</th>
+        <th>ИМЯ</th>
+        <th>ОТЧЕСТВО</th>
+        <th>EMAIL</th>
+    </tr>
+    <tr align="center" bgcolor = Seashell>
+        <td>Воронина</td>
+        <td>Ксения</td>
+        <td>Дмитриевна</td>
+        <td>ksenia.voronina04@yandex.ru</td>
+    </tr>
+    </table>
+
+</body>
+
+{% endblock %}
